@@ -416,7 +416,7 @@ div#hero {
         <section class="home_top_slider-secc">
         <div class="home_top_slider-main pb-5">
             <h1 class="home_top_slider-title text-center pt-1 pb-2">Featured Venues</h1>
-     <div class="screenshot_slider owl-carousel d-flex position-relative">
+     <div class="screenshot_slider owl-carousel d-flex position-relative overflow-hidden">
          <div class="item">
              <div class="position-relative img_responsive-padding">
                 <a href="#" class="img_contentt-linkk img_responsive-56"><img src="images/hotel_main_1_new.jpg" class="h-100 w-100" /><span class="img-slide-txtt">Majestic <img src="images/arrow-up-right-from-square-solid.svg" /></span></a>
@@ -497,7 +497,7 @@ div#hero {
         <div class="home_filter-main container pt-4 pb-5 mb-3">
             <div class="d-flex flex-wrap justify-content-center">
                 <h2 class="pr-2">Quick Search for</h2>
-                <ul class="d-flex flex-wrap align-items-center">
+                <ul class="d-flex flex-wrap align-items-center home_filter-itemss">
                     <li class="px-2"><a href="#" class="btn btn-border">Banquet Halls</a></li>
                     <li class="px-2"><a href="#" class="btn btn-border">Event Cordinators</a></li>
                     <li class="px-2"><a href="#" class="btn btn-border">Conference Halls</a></li>
@@ -515,7 +515,7 @@ div#hero {
             <div class="row">
                 <div class="slider-hotel_headd col-lg-3 d-flex flex-wrap justify-content-around align-items-center">
                     <h2 class="gold-headd w-100 text-center">Venues</h2>
-                    <a href="" class="btn btn-golden">See all 148 Venues</a>
+                    <a href="" class="btn btn-golden desktop_visiblee">See all 148 Venues</a>
                 </div>
                 <div class="slider-hotel_mainn col-lg-9">
                     <div class="slider-hotel hotel_custom-slider">
@@ -716,6 +716,7 @@ div#hero {
                             </div>
                         </div>
                     </div>
+                    <div class="mobile_visiblee text-center mt-4"><a href="" class="btn btn-golden">See all Service Providers</a></div>
                 </div>
             </div>
         </div>
@@ -727,7 +728,7 @@ div#hero {
             <div class="row">
                 <div class="slider-hotel_headd col-lg-3 d-flex flex-wrap justify-content-around align-items-center">
                     <h2 class="gold-headd w-100 text-center">Service Providers</h2>
-                    <a href="" class="btn btn-golden">See all Service Providers</a>
+                    <a href="" class="btn btn-golden desktop_visiblee">See all Service Providers</a>
                 </div>
                 <div class="slider-hotel_mainn col-lg-9">
                     <div class="slider-hotel hotel_custom-slider">
@@ -928,6 +929,7 @@ div#hero {
                             </div>
                         </div>
                     </div>
+                    <div class="mobile_visiblee text-center mt-4"><a href="" class="btn btn-golden">See all Service Providers</a></div>
                 </div>
             </div>
         </div>
@@ -974,7 +976,7 @@ div#hero {
 }
 .btn-golden {
     background: transparent linear-gradient(180deg, #E1B513 0%, #B78802 100%);
-    color: #00000080;
+    color: #00000080 !important;
     font-size: 20px;
     height: 50px;
     line-height: 50px;
@@ -1226,6 +1228,16 @@ img.slide_imggg {
 .hotel_locationn, .hotel_ratingg, .hotel_facilityy {
     color: #fff;
 }
+.home_filter-itemss {
+    justify-content: center;
+}
+.home_filter-itemss > li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.mobile_visiblee {
+    display: block !important;
+}
 @media screen and (min-width:768px){
     .navbar-brand-centered {
         position: absolute;
@@ -1242,6 +1254,99 @@ span.img-slide-txtt {
     height: 40px;
     width: 140px;
     line-height: 1;
+}
+}
+@media (max-width: 991.98px) {
+.slider-hotel_headd {
+    width: 220px;
+    flex: auto;
+    max-width: 220px;
+}
+.slider-hotel_mainn {
+    width: calc(100% - 230px);
+}
+.btn-golden {
+    font-size: 16px;
+    padding: 0 20px;
+}
+.home_venue-main h2 {
+    font-size: 60px;
+    line-height: 60px;
+}
+}
+@media (max-width: 767.98px) {
+span.img-slide-txtt {
+    width: 120px;
+    font-size: 14px;
+}
+button.slick-arrow, button.owl-next, button.owl-prev {
+    width: 40px;
+    height: 40px;
+    background-size: 10px !important;
+}
+.owl-item .item {
+    margin-top: 0;
+}
+.home_filter_search-main .form-group {
+    margin-bottom: 0;
+}
+.custom_select .nice-select {
+    height: 65px;
+    line-height: 65px;
+}
+.home_filter_search-main form {
+    background: #f6f1eb;
+    padding: 3px;
+    border-radius: 10px;
+}
+.btn-border {
+    font-size: 16px;
+}
+}
+@media (max-width:  767.98px) and (min-width: 595px) {
+    button.slick-next.slick-arrow {
+    right: -10px;
+}
+button.slick-prev.slick-arrow {
+    left: -10px;
+}
+}
+@media (max-width: 594.98px) {
+.screenshot_slider .owl-item.center .item {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+button.owl-prev {
+    left: 0px;
+}
+button.owl-next {
+    right: 0px;
+}
+.slider-hotel_headd {
+    width: 100%;
+    max-width: none;
+}
+.slider-hotel_mainn {
+    width: 100%;
+}
+button.slick-prev.slick-arrow {
+    left: -10px;
+}
+button.slick-next.slick-arrow {
+    right: -10px;
+}
+.custom_select {
+    border-right: 0;
+}
+.mobile_visiblee {
+    display: block;
+}
+.desktop_visiblee {
+    display: none !important;
+}
+.home_top_slider-main {
+    padding-bottom: 0 !important;
 }
 }
 </style>
@@ -1276,9 +1381,18 @@ span.img-slide-txtt {
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 992,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     },
@@ -1309,7 +1423,7 @@ span.img-slide-txtt {
             items: 1,
         },
         600: {
-            items: 3
+            items: 2
         },
         1200: {
             items: 3
