@@ -135,6 +135,9 @@ span.happy_customerr_txtt small {
     line-height: 1;
     margin-top: 7px;
 }
+.hotel_facilityy > img {
+    padding-right: 6px;
+}
 .help_with_imgg > span {
     display: inline-block;
     padding-right: 50px;
@@ -198,6 +201,18 @@ p {
     line-height: 1.2;
     font-weight: 400;
 }
+span.chat_Boxxx {
+    position: absolute;
+    right: -30px;
+    z-index: 1;
+    top: 0px;
+    width: 80px;
+}
+.happy_all_servicesr-main .col_innerr > img {
+    height: 190px;
+    object-fit: cover;
+    border-radius: 18px;
+}
 .btn-golden {
     background: transparent linear-gradient(180deg, #E1B513 0%, #B78802 100%);
     color: #00000080 !important;
@@ -219,6 +234,7 @@ p {
     color: #fff;
     border-radius: 5px;
     font-family: 'Montserrat';
+    z-index: 2;
 }
     h4.hotel_namee {
     line-height: 1.2;
@@ -415,7 +431,20 @@ nav.navbar {
     -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
-
+.hotel_custom-slider .slick-slide > .position-relative:hover  .norm_slide-imgg, 
+.hotel_custom-slider .slick-slide > .position-relative .hover-slide_imgg {
+    opacity: 0;
+}
+.hotel_custom-slider .slick-slide > .position-relative .hover-slide_imgg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.hotel_custom-slider .slick-slide > .position-relative:hover  .hover-slide_imgg {
+    opacity: 1;
+}
 .screenshot_slider .owl-item.center .item {
   -webkit-transform: scale(1.15);
   -ms-transform: scale(1.15);
@@ -432,7 +461,7 @@ section.home_customer-secc {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 15px 20px;
 }
 img.slide_imggg {
     height: 400px;
@@ -557,6 +586,13 @@ span.img-slide-txtt {
     height: 40px;
     width: 140px;
     line-height: 1;
+}
+h4.hotel_namee {
+    font-size: 18px;
+}
+
+.hotel_locationn {
+    font-size: 13px;
 }
 header .nav-link, .footer_bottomm_linkss > a {
     font-size: 14px;
