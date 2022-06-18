@@ -363,7 +363,25 @@ div#hero {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" type="text/css" href="style_custom.css">
+
 </head>
 
 
@@ -377,6 +395,7 @@ div#hero {
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse_inner">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link text-gold" href="#">SUPPLIER LIST <span class="sr-only">(current)</span></a>
@@ -394,20 +413,21 @@ div#hero {
 
         <ul class="navbar-nav ml-auto navbar-right">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-gold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AED</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="nav-link dropdown-toggle text-dark-gray" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AED</a>
+                <div class="dropdown-menu text-dark-gray" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item text-gold"  href="#">AED</a>
                   <a class="dropdown-item text-gold" href="#">AED</a>
                   <a class="dropdown-item text-gold" href="#">AED</a>
                 </div>
             </li>
             <li class="nav-item d-flex align-items-center">
-                <a class="nav-link text-gold border-gold rounded-pill language_boxx" href="#">عربي< </a>
+                <span class="text-dark-gray pr-1 nav-link ml-3">ENGLISH</span> <a class="nav-link text-gold border-gold rounded-pill language_boxx" href="#">عربي< </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-gold" href="#">REGISTER or LOGIN</a>
+                <a class="nav-link text-gold" href="#">REGISTER <span class="text-dark-gray">or</span> LOGIN</a>
             </li>
         </ul>
+    </div>
       </div>
     </nav>
 </header>
@@ -959,7 +979,7 @@ div#hero {
         <div class="happy_all_servicesr-main container">
             <div class="row">
                 <h2 class="italian_title col-md-12 mb-3">All Services</h2>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-xl-3 col-md-6">
                     <div class="col_innerr">
                         <img src="images/service_1.jpg" class="" width="100%" />
                         <div class="services_all-txtt">
@@ -968,7 +988,7 @@ div#hero {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-xl-3 col-md-6">
                     <div class="col_innerr">
                         <img src="images/service_2.jpg" class="" width="100%" />
                         <div class="services_all-txtt">
@@ -977,7 +997,7 @@ div#hero {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-xl-3 col-md-6">
                     <div class="col_innerr">
                         <img src="images/service_3.jpg" class="" width="100%" />
                         <div class="services_all-txtt">
@@ -986,7 +1006,7 @@ div#hero {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-xl-3 col-md-6">
                     <div class="col_innerr">
                         <img src="images/service_4.jpg" class="" width="100%" />
                         <div class="services_all-txtt">
@@ -995,7 +1015,9 @@ div#hero {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+            </div>
+            <div class="row more_services">
+                <div class="col-xl-3 col-md-6">
                     <div class="col_innerr">
                         <img src="images/service_1.jpg" class="" width="100%" />
                         <div class="services_all-txtt">
@@ -1004,7 +1026,7 @@ div#hero {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-xl-3 col-md-6">
                     <div class="col_innerr">
                         <img src="images/service_2.jpg" class="" width="100%" />
                         <div class="services_all-txtt">
@@ -1013,7 +1035,7 @@ div#hero {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-xl-3 col-md-6">
                     <div class="col_innerr">
                         <img src="images/service_7.jpg" class="" width="100%" />
                         <div class="services_all-txtt">
@@ -1022,7 +1044,7 @@ div#hero {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-xl-3 col-md-6">
                     <div class="col_innerr">
                         <img src="images/service_8.jpg" class="" width="100%" />
                         <div class="services_all-txtt">
@@ -1031,8 +1053,10 @@ div#hero {
                         </div>
                     </div>
                 </div>
-                <div class="col-12 text-center mt-5"><a href="" class="btn btn-golden desktop_visiblee">See all 148 Venues</a></div>
+                <div class="col-12 text-center mt-4 mt-xl-5"><a href="" class="btn btn-golden desktop_visiblee" data-content="toggle-text">See all 148 Venues</a></div>
+                
             </div>
+            <div class="col-12 text-center mb-3"><button type="button" class="btn btn-golden mobile_visiblee show_hide mx-auto px-5">View More</button></div>
         </div>
     </section>
 
@@ -1041,27 +1065,78 @@ div#hero {
 
 
     <footer>
-        <section class="footer-secc pt-5 pb-5">
+        <section class="footer-secc pt-5">
             <div class="footer_topp container d-flex flex-wrap">
                 <div class="col_11 col_commonn">
                     <div class="col_ineerr">
                         <h3 class="footer_titlee">ABOUT US</h3>
                         <p>Throughout the years, Hotels Venues team have built connections with events managers and hotel venues to providing comprehensive platform to search and book for venues for special occasions. HotelsVenues.com is a unique platform that makes thousands of venues in UAE a click away, thus, delivering business owners and customers satisfaction in minimal time consumption, and avoids venues over booking or cancellation. Our platform permits its users to search and reserve their most suitable venue and search for related supplier at a glance according to their desired district, guest numbers and budget per guest, venue start rating, preferred schedule, and Budget. HotelsVenues.com is committed to providing venues and caterings at competitive prices, making it consumer’s No.1 platform for their occasions.</p>
 
-                        <div class="social_iconnss">
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-linkedin"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
+                        <div class="social_iconnss mt-5 pt-5 mb-5">
+                            <a href="" class="mr-2 d-inline-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                    <g class="social_iconn" id="Group_782" data-name="Group 782" transform="translate(-39 -4409)">
+                                        <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(39 4409)" fill="none" stroke="#cb9e0a" stroke-width="3">
+                                          <circle cx="35" cy="35" r="35" stroke="none"/>
+                                          <circle cx="35" cy="35" r="33.5" fill="none"/>
+                                        </g>
+                                        <path id="facebook-f-brands" d="M37.9,16.875l.833-5.429h-5.21V7.922a2.715,2.715,0,0,1,3.061-2.933h2.368V.367A28.882,28.882,0,0,0,34.753,0c-4.29,0-7.095,2.6-7.095,7.308v4.138H22.89v5.429h4.769V30h5.869V16.875Z" transform="translate(43.076 4429)" fill="#cb9e0a"/>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="" class="mr-2 d-inline-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                    <g class="social_iconn" id="Group_783" data-name="Group 783" transform="translate(-39 -4409)">
+                                        <g class="social_iconn" id="Ellipse_13" data-name="Ellipse 13" transform="translate(39 4409)" fill="none" stroke="#cb9e0a" stroke-width="3">
+                                            <circle cx="35" cy="35" r="35" stroke="none"/>
+                                            <circle cx="35" cy="35" r="33.5" fill="none"/>
+                                        </g>
+                                        <path id="instagram-brands" d="M14.932,39.133a7.692,7.692,0,1,0,7.692,7.692A7.679,7.679,0,0,0,14.932,39.133Zm0,12.692a5,5,0,1,1,5-5,5.01,5.01,0,0,1-5,5Zm9.8-13.007a1.794,1.794,0,1,1-1.794-1.794A1.79,1.79,0,0,1,24.732,38.819Zm5.094,1.821A8.878,8.878,0,0,0,27.4,34.354a8.937,8.937,0,0,0-6.286-2.423c-2.477-.141-9.9-.141-12.378,0a8.924,8.924,0,0,0-6.286,2.417A8.907,8.907,0,0,0,.03,40.633c-.141,2.477-.141,9.9,0,12.378A8.878,8.878,0,0,0,2.454,59.3,8.948,8.948,0,0,0,8.74,61.72c2.477.141,9.9.141,12.378,0A8.878,8.878,0,0,0,27.4,59.3a8.937,8.937,0,0,0,2.423-6.286C29.967,50.534,29.967,43.116,29.826,40.64Zm-3.2,15.028a5.063,5.063,0,0,1-2.852,2.852c-1.975.783-6.661.6-8.843.6s-6.875.174-8.843-.6a5.063,5.063,0,0,1-2.852-2.852c-.783-1.975-.6-6.661-.6-8.843s-.174-6.875.6-8.843A5.063,5.063,0,0,1,6.089,35.13c1.975-.783,6.661-.6,8.843-.6s6.875-.174,8.843.6a5.063,5.063,0,0,1,2.852,2.852c.783,1.975.6,6.661.6,8.843S27.41,53.7,26.626,55.668Z" transform="translate(59.072 4397.175)" fill="#cb9e0a"/>
+                                    </g>
+                                </svg>
+
+                            </a>
+                            <a href="" class="mr-2 d-inline-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                  <g class="social_iconn" id="Group_784" data-name="Group 784" transform="translate(-39 -4409)">
+                                    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(39 4409)" fill="none" stroke="#cb9e0a" stroke-width="3">
+                                      <circle cx="35" cy="35" r="35" stroke="none"/>
+                                      <circle cx="35" cy="35" r="33.5" fill="none"/>
+                                    </g>
+                                    <path id="linkedin-in-brands" d="M6.715,30.01H.5V9.981h6.22ZM3.6,7.248A3.619,3.619,0,1,1,7.2,3.612,3.632,3.632,0,0,1,3.6,7.248ZM29.994,30.01H23.788V20.26c0-2.324-.047-5.3-3.234-5.3-3.234,0-3.729,2.525-3.729,5.136V30.01H10.611V9.981h5.965v2.732h.087a6.536,6.536,0,0,1,5.885-3.234c6.295,0,7.452,4.145,7.452,9.529v11Z" transform="translate(59 4428.99)" fill="#cb9e0a"/>
+                                  </g>
+                                </svg>
+                            </a>
+                            <a href="" class="mr-2 d-inline-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                      <g class="social_iconn" id="Group_785" data-name="Group 785" transform="translate(-39 -4409)">
+                                        <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(39 4409)" fill="none" stroke="#cb9e0a" stroke-width="3">
+                                          <circle cx="35" cy="35" r="35" stroke="none"/>
+                                          <circle cx="35" cy="35" r="33.5" fill="none"/>
+                                        </g>
+                                        <path id="youtube-brands" d="M44.306,67.3a3.77,3.77,0,0,0-2.652-2.67C39.314,64,29.933,64,29.933,64s-9.381,0-11.721.631A3.77,3.77,0,0,0,15.56,67.3a42.442,42.442,0,0,0,0,14.535,3.713,3.713,0,0,0,2.652,2.627c2.34.631,11.721.631,11.721.631s9.381,0,11.721-.631a3.713,3.713,0,0,0,2.652-2.627,42.443,42.443,0,0,0,0-14.535ZM26.865,79.029V70.108l7.841,4.461Z" transform="translate(44.067 4369.453)" fill="#cb9e0a"/>
+                                      </g>
+                                </svg>
+                            </a>
+                            <a href="" class="mr-2 d-inline-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                  <g class="social_iconn" id="Group_786" data-name="Group 786" transform="translate(-39 -4409)">
+                                    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(39 4409)" fill="none" stroke="#cb9e0a" stroke-width="3">
+                                      <circle cx="35" cy="35" r="35" stroke="none"/>
+                                      <circle cx="35" cy="35" r="33.5" fill="none"/>
+                                    </g>
+                                    <path id="twitter-brands" d="M26.916,54.154c.019.266.019.533.019.8,0,8.128-6.187,17.494-17.494,17.494A17.375,17.375,0,0,1,0,69.687a12.72,12.72,0,0,0,1.485.076,12.314,12.314,0,0,0,7.633-2.627,6.159,6.159,0,0,1-5.749-4.264,7.754,7.754,0,0,0,1.161.1,6.5,6.5,0,0,0,1.618-.209,6.149,6.149,0,0,1-4.93-6.034v-.076A6.192,6.192,0,0,0,4,57.428a6.158,6.158,0,0,1-1.9-8.223,17.477,17.477,0,0,0,12.678,6.434,6.941,6.941,0,0,1-.152-1.409A6.154,6.154,0,0,1,25.26,50.024a12.105,12.105,0,0,0,3.9-1.485,6.132,6.132,0,0,1-2.7,3.388A12.326,12.326,0,0,0,30,50.975,13.217,13.217,0,0,1,26.916,54.154Z" transform="translate(59 4383.735)" fill="#cb9e0a"/>
+                                  </g>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col_22 col_commonn">
-                    <div class="col_ineerr">
-                        <h3 class="footer_titlee">EVENT LIST</h3>
-                        <div class="footer_linkss">
+                    <div class="col_ineerr dropdown">
+                        <h3 class="footer_titlee dropdown-toggle" data-toggle="dropdown">EVENT LIST</h3>
+                        <div class="footer_linkss dropdown-menu">
                             <ul>
                                 <li><a href="">WEDDING</a></li>
                                 <li><a href="">ENGAGEMENT</a></li>
@@ -1081,9 +1156,9 @@ div#hero {
                 </div>
 
                 <div class="col_33 col_commonn">
-                    <div class="col_ineerr">
-                        <h3 class="footer_titlee">SERVICES LIST</h3>
-                        <div class="footer_linkss">
+                    <div class="col_ineerr dropdown">
+                        <h3 class="footer_titlee dropdown-toggle" data-toggle="dropdown">SERVICES LIST</h3>
+                        <div class="footer_linkss dropdown-menu">
                             <ul>
                                 <li><a href="">BANQUET HALL</a></li>
                                 <li><a href="">BANQUET HALL</a></li>
@@ -1105,9 +1180,9 @@ div#hero {
                 </div>
 
                 <div class="col_44 col_commonn">
-                    <div class="col_ineerr">
-                        <h3 class="footer_titlee">CITY LIST</h3>
-                        <div class="footer_linkss">
+                    <div class="col_ineerr dropdown">
+                        <h3 class="footer_titlee dropdown-toggle" data-toggle="dropdown">CITY LIST</h3>
+                        <div class="footer_linkss dropdown-menu">
                             <ul>
                                 <li><a href="">DUBAI</a></li>
                                 <li><a href="">AL AIN</a></li>
@@ -1130,16 +1205,16 @@ div#hero {
                             <a href="#" class="btn btn-green w-100">VENDOR LOGIN</a>
                             <a href="#" class="btn btn-green w-100">VENDOR REGISTER</a>
                         </div>
-                        <div class="footer_contactt">
+                        <div class="footer_contactt pt-5 mt-4">
                             <h3 class="footer_titlee">CONTACT US</h3>
                             <div class="icon_txttt">
-                                <img src="" width="20px" /><span>Silver Tower, Business Bay, Dubai, UAE</span>
+                                <img src="images/map_markerr.svg" width="20px" /><span>Silver Tower, Business Bay, Dubai, UAE</span>
                             </div>
                             <div class="icon_txttt">
-                                <img src="" width="20px" /><span>+971 4 435 7505 <span>+971524055060</span></span>
+                                <img src="images/phone.svg" width="20px" /><span>+971 4 435 7505 <span>+971524055060</span></span>
                             </div>
                             <div class="icon_txttt">
-                                <img src="" width="20px" /><span>info@hotelsvenues.com</span>
+                                <img src="images/Mail.svg" width="20px" /><span>info@hotelsvenues.com</span>
                             </div>
                         </div>
                     </div>
@@ -1148,19 +1223,19 @@ div#hero {
             </div>
 
             <div class="footer_bottomm" style="background: #0000000D;">
-                <div class="footer_bottomm_inner">
-                    <div class="footer_bottomm_linkss">
-                        <a href="">HOME</a>
-                        <a href="">SUPPLIER LIST</a>
-                        <a href="">VENUE LIST</a>
-                        <a href="">EVENT TYPE</a>
-                        <a href="">CORPORATE EVENTS</a>
-                        <a href="">ABOUT US</a>
-                        <a href="">CONTACT US</a>
+                <div class="footer_bottomm_inner d-flex flex-wrap justify-content-between container align-items-center px-3 py-4" >
+                    <div class="footer_bottomm_linkss pr-2 pt-1">
+                        <a href="" class="text-gold px-1">HOME</a>
+                        <a href="" class="text-gold px-1">SUPPLIER LIST</a>
+                        <a href="" class="text-gold px-1">VENUE LIST</a>
+                        <a href="" class="text-gold px-1">EVENT TYPE</a>
+                        <a href="" class="text-gold px-1">CORPORATE EVENTS</a>
+                        <a href="" class="text-gold px-1">ABOUT US</a>
+                        <a href="" class="text-gold px-1">CONTACT US</a>
                     </div>
 
                     <div class="footer_bottomm_copyrightt">
-                        <p>© Copyright HotelVenues @2022</p>
+                        <p style=" color: #5a5a5a; ">© Copyright HotelVenues @2022</p>
                     </div>
                 </div>
             </div>
@@ -1168,551 +1243,22 @@ div#hero {
     </footer>
 
 
+<!-- <script>
+$(document).ready(function () {
+    $(".more_services").hide();
+    $(".show_hide").on("click", function () {
+        var txt = $(".more_services").is(':visible') ? 'View More' : 'View Less';
+        $(".show_hide").text(txt);
+        $(this).next('.more_services').slideToggle(200);
+    });
+});
+$(document).ready(function(){
+  $(".show_hide").click(function(){
+    $(".more_services").toggle();
+  });
+});
+</script> -->
 
-<style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-    .home_venue-main h2, .home_filter-main h2, .home_top_slider-title, .italian_title, .happy_customerr-coll {
-    font-family: 'Italianno', cursive !important;
-}
-.home_top_slider-title {
-    color:#5A5A5A;
-    font-size: 50px;
-    line-height: 1.2;
-    font-weight: 400;
-}
-.col_commonn {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.col_11 {
-    width: 26%;
-}
-.col_22 {
-    width: 15%;
-}
-.col_33, .col_44 {
-    width: 18%;
-}
-.col_55 {
-    width: 23%;
-}
-.btn-green {
-    color: #53AFA2 !important;
-    border: 1px solid #53AFA2;
-    height: 50px;
-    padding: 0 15px;
-    line-height: 48px;
-    border-radius: 10px;
-    margin-bottom: 16px;
-    font-weight: 600;
-}
-.btn-green:hover {
-    background: #53AFA2 !important;
-    color: #fff !important;
-}
-.footer_topp.container {
-    padding: 0;
-}
-.happy_all_servicesr-main .col_innerr {
-    position: relative;
-    margin-bottom: 25px;
-}
-.service_headdd img {
-    margin-left: 7px;
-}
-span.vendors_countt {
-    font-size: 24px;
-}
-span.vendors_countt small {
-    font-size: 66%;
-}
-.service_headdd {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-}
-.services_all-txtt {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 14px 15px 10px;
-    background: transparent linear-gradient(180deg, #00000005 0%, #000000A8 13%, #000000 100%) 0% 0% no-repeat padding-box;
-    border-radius: 0px 0 20px 20px;
-}
-.happy_customerr-coll {
-    background: #53AFA2;
-    padding: 20px;
-    color: #fff;
-    border-radius: 20px;
-}
-span.happy_customerr_txtt {
-    font-size: 50px;
-    line-height: 42px;
-    display: inline-block;
-    vertical-align: middle;
-}
-span.happy_customerr_txtt small {
-    font-size: 40px;
-    line-height: 1;
-     display: block;
-    text-align: right;
-}
-.help_with_imgg {
-    width: calc(100% - 857px);
-    text-align: right;
-    padding: 0 0px 0 30px;
-}
-.help_with_imgg > span > span {
-    display: block;
-    line-height: 1;
-    margin-top: 7px;
-}
-.help_with_imgg > span {
-    display: inline-block;
-    padding-right: 50px;
-    text-align: center;
-}
-span.happy_customerr_txtt small a {
-    color: inherit !important;
-    text-decoration: underline;
-}
-span.happy_customerr_numm {
-    font-size: 100px;
-    line-height: 1;
-    display: inline-block;
-    padding-right: 30px;
-    vertical-align: middle;
-}
-body .custom_select .nice-select ul.list {
-    width: 100% !important;
-}
-.home_venue-main h2, .home_customer-secc h2, .italian_title {
-    font-weight: 400;
-    font-size: 75px;
-    line-height: 75px;
-    color: #CB9E0A;
-}
-.slider-hotel_headd {
-    width: 310px;
-    flex: auto;
-    max-width: 310px;
-}
-main {
-    background-image: url(images/background.png);
-    background-size: auto;
-    background-repeat: repeat;
-    background-position: top left;
-}
-footer {
-    background-image: url(images/cards2.svg);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-color: #0000000D;
-}
-.footer_titlee {
-    font-size: 20px;
-    color: #5A5A5A;
-}
-.slider-hotel_mainn {
-    width: calc(100% - 310px);
-    flex: none;
-    max-width: none;
-}
-.home_filter-main h2 {
-    font-size: 40px;
-    color: #5A5A5A;
-    line-height: 1.2;
-    font-weight: 400;
-}
-.btn-golden {
-    background: transparent linear-gradient(180deg, #E1B513 0%, #B78802 100%);
-    color: #00000080 !important;
-    font-size: 20px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 15px;
-    border-radius: 10px;
-    text-transform: none;
-}
-    span.hotel_tagg {
-    position: absolute;
-    top: 18px;
-    left: 18px;
-    background: #DE0505;
-    padding: 6px 10px;
-    line-height: 1;
-    font-size: 14px;
-    color: #fff;
-    border-radius: 5px;
-    font-family: 'Montserrat';
-}
-    h4.hotel_namee {
-    line-height: 1.2;
-}
-.hotel_locationn {
-    font-size: 15px;
-}
-.btn-border {
-    height: 40px;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: capitalize;
-    letter-spacing: 0;
-    padding: 0 15px;
-    background: #fff;
-    line-height: 38px;
-    border: 1px solid #CB9E0A;
-    border-radius: 50px;
-    color: #CB9E0A !important;
-}
-.btn-border:hover {
-    background: #CB9E0A;
-    color: #fff !important;
-}
-.custom_select .nice-select:after {
-    content: "";
-    border: 5px solid #CB9E0A;
-    height: auto;
-    border-color: transparent #CB9E0A #CB9E0A transparent;
-    transform: rotate(45deg) translateY(-50%);
-    top: calc(50% - 5px);
-    right: auto !important;
-    left: 15px;
-}
-.custom_select .nice-select {
-    border: none !important;
-    background: none !important;
-    color: inherit !important;
-    border-radius: 0 !important;
-    float: none;
-    height: 75px;
-    text-align: left !important;
-    padding-left: 45px;
-    font-weight: 400;
-    line-height: 75px;
-}
-.custom_select {
-    background: #F6F1EB !important;
-        color: #AAAAAA;
-}
-.btn_submitt {
-    height: 75px;
-    background: #f6f1eb;
-    border-radius: 0 80px 80px 0;
-}
-.btn_submitt  button.btn {
-    line-height: 35px;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    width: calc(100% - 20px);
-    text-align: center;
-    margin-left: 10px;
-    background: transparent linear-gradient(180deg, #E1B513 0%, #B78802 100%) 0% 0% no-repeat padding-box;
-    border-radius: 80px;
-    color: #00000080;
-    text-transform: capitalize;
-    letter-spacing: 0;
-    font-size: 20px;
-}
-.drop_cityy {
-    border-radius: 80px 0 0 80px;
-}
-.custom_select {
-    border-right: 1px solid #0000000a;
-}
-.language_boxx {
-    line-height: 1;
-}
-header {
-    height: auto;
-}
-section.home_top_slider-secc {
-    margin-top: 100px;
-    padding-top: 40px;
-}
-/*.home_top_slider .slick-track .slick-slide.slick-current {
-    width: calc(40vw - 0px) !important;
-}*/
-
-.language_boxx {
-    padding: 3px 12px 12px !important;
-}
-
-    .text-gold {
-        color:  #CB9E0A !important;
-    }
-    .border-gold {
-        border: 1px solid #CB9E0A !important;
-    }
-
-.img_responsive-padding {
-    padding: 30%;
-    position: relative;
-}
-.img_responsive-56 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-button.slick-arrow, button.owl-next, button.owl-prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-button.slick-arrow, button.owl-next, button.owl-prev {
-    font-size: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 0;
-    z-index: 1;
-}
-button.slick-next.slick-arrow, button.slick-prev.slick-arrow,
-button.owl-next, button.owl-prev {
-    background-position: center;
-    background-size: 15px;
-    background-repeat: no-repeat;
-}
-button.slick-prev.slick-arrow, button.owl-prev {
-    left: -30px;
-    background-image: url(images/chevron-left.png);
-}
-button.slick-next.slick-arrow, button.owl-next {
-    right: -30px;
-    background-image: url(images/chevron-right.png);
-}
-button.owl-prev {
-    left: 30px;
-    background-image: url(images/chevron-left.png);
-}
-button.owl-next {
-    right: 30px;
-    background-image: url(images/chevron-right.png);
-}
-.home_all_services-secc {
-    padding-bottom: 120px;
-}
-span.img-slide-txtt {
-    position: absolute;
-    display: flex;
-    bottom: 20px;
-    left: 0;
-    background: #00000080;
-    height: 80px;
-    width: 200px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    border-radius: 0 10px 10px 0;
-}
-.img-slide-txtt img {
-    object-fit: contain !important;
-    border-radius: 0 !important;
-    margin-left: 10px;
-}
-.slick-slide {
-    height: auto;
-}
-.home_top_slider-main {
-    padding: 0 30px;
-}
-nav.navbar {
-    min-height: 100px;
-    background: #f6f1eb;
-}
-.home_top_slider-main .owl-stage {
-    display: flex;
-}
-.owl-item .item {
-    transform: translate3d(0, 0, 0);
-    margin: 30px 0;
-}
-
-.screenshot_slider .owl-item .item {
-    -webkit-transition: 0.3s;
-    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-}
-
-.screenshot_slider .owl-item.center .item {
-  -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15);
-}
-.container {
-    max-width: 1830px;
-}
-section.home_customer-secc {
-    background: #F6F1EB;
-}
-.hotel_inforr_inner {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 0 15px;
-}
-img.slide_imggg {
-    height: 400px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-.hotel_custom-slider .slick-slide {
-    padding: 0 8px;
-}
-.slider-hotel_mainn ul.slick-dots {
-    display: none !important;
-}
-.hotel_inforr {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0deg, black 12%, transparent 70%);
-    border-radius: 20px;
-}
-.hotel_locationn, .hotel_ratingg, .hotel_facilityy {
-    color: #fff;
-}
-.home_filter-itemss {
-    justify-content: center;
-}
-.home_filter-itemss > li {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.mobile_visiblee {
-    display: none !important;
-}
-@media screen and (min-width:768px){
-    .navbar-brand-centered {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
-        width: 250px;
-        text-align: center;
-        background-color: #eee;
-    }
-}
-@media (max-width:  1440px) {
-span.img-slide-txtt {
-    height: 40px;
-    width: 140px;
-    line-height: 1;
-}
-}
-@media (max-width: 991.98px) {
-.slider-hotel_headd {
-    width: 220px;
-    flex: auto;
-    max-width: 220px;
-}
-.slider-hotel_mainn {
-    width: calc(100% - 230px);
-}
-.btn-golden {
-    font-size: 16px;
-    padding: 0 20px;
-}
-.home_venue-main h2, .home_customer-secc h2, .italian_title {
-    font-size: 60px;
-    line-height: 60px;
-}
-}
-@media (max-width: 767.98px) {
-span.img-slide-txtt {
-    width: 120px;
-    font-size: 14px;
-}
-button.slick-arrow, button.owl-next, button.owl-prev {
-    width: 40px;
-    height: 40px;
-    background-size: 10px !important;
-}
-.owl-item .item {
-    margin-top: 0;
-}
-.home_filter_search-main .form-group {
-    margin-bottom: 0;
-}
-.custom_select .nice-select {
-    height: 65px;
-    line-height: 65px;
-}
-.home_filter_search-main form {
-    background: #f6f1eb;
-    padding: 3px;
-    border-radius: 10px;
-}
-.btn-border {
-    font-size: 16px;
-}
-}
-@media (max-width:  767.98px) and (min-width: 595px) {
-    button.slick-next.slick-arrow {
-    right: -10px;
-}
-button.slick-prev.slick-arrow {
-    left: -10px;
-}
-}
-@media (max-width: 594.98px) {
-.screenshot_slider .owl-item.center .item {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-}
-button.owl-prev {
-    left: 0px;
-}
-button.owl-next {
-    right: 0px;
-}
-.slider-hotel_headd {
-    width: 100%;
-    max-width: none;
-}
-.slider-hotel_mainn {
-    width: 100%;
-}
-button.slick-prev.slick-arrow {
-    left: -10px;
-}
-button.slick-next.slick-arrow {
-    right: -10px;
-}
-.custom_select {
-    border-right: 0;
-}
-.mobile_visiblee {
-    display: block !important;
-}
-.desktop_visiblee {
-    display: none !important;
-}
-.home_top_slider-main {
-    padding-bottom: 0 !important;
-}
-.home_venue-main h2, .home_customer-secc h2, .italian_title {
-    margin-bottom: 10px;
-}
-}
-</style>
 
 
 
@@ -1775,6 +1321,7 @@ button.slick-next.slick-arrow {
     var owl = $('.screenshot_slider').owlCarousel({
     loop: true,
     responsiveClass: true,
+     dots: true,
     nav: true,
     margin: 0,    
     autoplayTimeout: 4000,
